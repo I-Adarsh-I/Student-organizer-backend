@@ -2,7 +2,7 @@ var express = require("express");
 const bodyParser = require("body-parser");
 const storage = require("node-persist");
 var app = express();
-const PORT = 3000;
+const PORT = 5000;
 
 var jsonParser = bodyParser.json();
 storage.init();
@@ -77,3 +77,7 @@ app.post("/allStudents", jsonParser, async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server has started on port = ${PORT}`);
 });
+
+
+
+
